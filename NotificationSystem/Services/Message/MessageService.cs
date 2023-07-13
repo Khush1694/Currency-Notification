@@ -20,6 +20,7 @@ namespace NotificationSystem.Services.Message
         private ICurrencyConverter _currencyConverter;
         private ILocationService _locationService;
         private Integer Salary
+        private sourceUrl = "www.google.com/test123"
 
         public MessageService(IExchangeRatesService exchangeRatesService, ICurrencyConverter currencyConverter, ILocationService locationService)
         {

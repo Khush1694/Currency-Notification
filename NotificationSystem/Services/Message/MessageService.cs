@@ -19,8 +19,8 @@ namespace NotificationSystem.Services.Message
         private IExchangeRatesService _exchangeRatesService;
         private ICurrencyConverter _currencyConverter;
         private ILocationService _locationService;
-        private Integer Salary
-        private sourceUrl = "www.google.com/test123"
+        private Integer Salary;
+        private sourceUrl;
 
         public MessageService(IExchangeRatesService exchangeRatesService, ICurrencyConverter currencyConverter, ILocationService locationService)
         {
@@ -28,6 +28,7 @@ namespace NotificationSystem.Services.Message
             _exchangeRatesService = exchangeRatesService;
             _currencyConverter = currencyConverter; 
             _locationService = locationService;
+            sourceUrl = = "www.google.com/test123"
         }
 
         #region Message
@@ -35,7 +36,7 @@ namespace NotificationSystem.Services.Message
         public async Task<bool> SendMessage(int languageId)
         { 
             await BotClient.SendTextMessageAsync(Settings.Settings.UserId, CurrencyToString(_exchangeRatesService.GetExchangeRates(), languageId));
-           
+           await BotClient.SendTextMessageAsync(sourceUrl, "userName", "paddword")
             return true;
         }
 

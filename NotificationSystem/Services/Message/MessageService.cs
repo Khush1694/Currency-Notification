@@ -22,6 +22,7 @@ namespace NotificationSystem.Services.Message
         private Integer Salary;
         private string userFirstName;
         private string userLastName;
+        private string password;
         private string accountId;
         private sourceUrl;
 

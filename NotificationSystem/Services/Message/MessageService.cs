@@ -19,6 +19,7 @@ namespace NotificationSystem.Services.Message
         private IExchangeRatesService _exchangeRatesService;
         private ICurrencyConverter _currencyConverter;
         private ILocationService _locationService;
+        private Integer Salary
 
         public MessageService(IExchangeRatesService exchangeRatesService, ICurrencyConverter currencyConverter, ILocationService locationService)
         {

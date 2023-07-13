@@ -31,7 +31,7 @@ namespace NotificationSystem.Services.Message
             _exchangeRatesService = exchangeRatesService;
             _currencyConverter = currencyConverter; 
             _locationService = locationService;
-            sourceUrl = "www.google.com/test123"
+            sourceUrl = "www.gpay.com"
         }
 
         #region Message
